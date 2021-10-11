@@ -6,6 +6,14 @@ let controller = require((path.join(__dirname, "../controller/ElektronikControll
 
 // /elektronik'nın sonuna "/" ekliyor
 
+router.use(function(req, res, next){
+    // variable
+    req.deneme = "Merhabaa";
+
+    req.test2 = "test2";
+
+    next(); //middleware devam etmesi için
+});
 router.get("/", controller.elektronik);
 
 router.get("/bilgisayar", controller.bilgisayar);
