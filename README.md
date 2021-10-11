@@ -1,3 +1,3 @@
 # nodejs-test
 
-I was trying to learn nodejs. Some tests, tutorials... etc.
+I trying to learn nodejs, expressjs and how to use npm. Some tests, tutorials... etc.
