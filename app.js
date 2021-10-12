@@ -4,6 +4,10 @@ let path = require('path');
 let fs = require("fs"); 
 let app = express();
 
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/app_server/views"));
+
+
 // file require
 let routeElektronik = require(path.join(__dirname, "./app_server/routes/ElektronikRoute.js"));
 // bazen bunu kullanmak gerekiyor => (path.join(__dirname, " ")

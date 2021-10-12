@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bilgisayar</title>
+</head>
+<body>
+    <h3>BİLGİSAYAR</h3>
+    <h2>EJS WORKING!!!!!11!!</h2>
+
+    <p><%= mesaj%></p>
+
+    <h2>Dizi yazdırmak</h2>
+<!--HTML kodu yazmak için EJS kodunu "%>" ile  kapatmak gerekiyor-->
+    <% langs.forEach(element => { %>
+     <ul>
+         <li><%= element %> </li>
+     </ul>
+    <% }) %>
+</body>
+</html>
