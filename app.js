@@ -15,6 +15,8 @@ const hostname = "127.0.0.1";
 app.use('/public', express.static(path.join(__dirname, 'public')));
 //__dirname çağrıldığı klasörü getiriyor
 
+//buraya yazılan her middleware her durumda çalışacaktır.
+
 app.use("/elektronik", routeElektronik);
 
 
