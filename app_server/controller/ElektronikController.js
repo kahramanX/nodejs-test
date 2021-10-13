@@ -1,5 +1,6 @@
 let path = require('path'); // necessary
 let express = require('express');
+
 // router nesnesinde get, post, put, delete gibi routeleri kullanabilirsin
 let router = express.Router();
 
@@ -10,8 +11,11 @@ module.exports.index = function (req, res) {
 module.exports.elektronik = function(req, res) {
     console.log(req.deneme);
 
-    res.sendFile(path.join(__dirname, '../../elektronik.html'));
-     //sendFile net yolu ister.
+    //res.sendFile(path.join(__dirname, '../../elektronik.html'));
+    //üstteki yerine
+    res.render("elektronik");
+
+    //sendFile net yolu ister.
     //path.join projenin bulunduğu klasör ile elektronik.html birleştiriyor. bu sayede doğru yolu almasını sağlıyor
 
     console.log("çalıştıııııııı");

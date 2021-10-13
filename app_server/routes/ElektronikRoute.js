@@ -16,6 +16,7 @@ router.use(function(req, res, next){
 });
 router.get("/", controller.elektronik);
 
+//sadece dosya adı kullandım çünkü app.js de konumunu tanımladım
 router.get("/bilgisayar", controller.bilgisayar);
 
 
